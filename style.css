@@ -703,3 +703,42 @@ textarea.question:invalid~input[type="submit"] {
         opacity: 1;
     }
 }
+
+@media (max-width:600px) {
+    body {
+        padding: 0;
+    }
+
+    input.question+label>span {
+        font-size: 1.4em;
+        top: -50px;
+    }
+
+    form {
+        /* margin-top: 50px; */
+        padding: 50px;
+    }
+
+    input.question {
+        font-size: 1.6em;
+    }
+
+    input.question:focus+label>span,
+    input.question:valid+label>span {
+        top: -75px;
+        font-size: 22px;
+        color: rgb(212, 192, 192);
+    }
+
+    #btn {
+        font-size: 1.7em;
+        width: 50%;
+        bottom: -10%;
+    }
+
+    .header {
+        font-size: 1.2em;
+        width: 60%;
+        border-radius: 50px;
+    }
+}
